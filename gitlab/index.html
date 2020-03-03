@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>gitlab新專案步驟 | VuePress 測試</title>
+    <meta name="description" content="Just playing around">
+    
+    
+    <link rel="preload" href="/vuepress/assets/css/0.styles.df3347f5.css" as="style"><link rel="preload" href="/vuepress/assets/js/app.34ae0971.js" as="script"><link rel="preload" href="/vuepress/assets/js/7.f0695ac3.js" as="script"><link rel="preload" href="/vuepress/assets/js/2.d5730ec2.js" as="script"><link rel="prefetch" href="/vuepress/assets/js/10.f3081ddf.js"><link rel="prefetch" href="/vuepress/assets/js/3.4ac57c51.js"><link rel="prefetch" href="/vuepress/assets/js/4.70eacb0c.js"><link rel="prefetch" href="/vuepress/assets/js/5.65efd18c.js"><link rel="prefetch" href="/vuepress/assets/js/6.52b0d60a.js"><link rel="prefetch" href="/vuepress/assets/js/8.fe20cabe.js"><link rel="prefetch" href="/vuepress/assets/js/9.9e32f6bf.js">
+    <link rel="stylesheet" href="/vuepress/assets/css/0.styles.df3347f5.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vuepress/" class="home-link router-link-active"><!----> <span class="site-name">VuePress 測試</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><!---->  <ul class="sidebar-links"><li><a href="/vuepress/" class="sidebar-link">index</a></li><li><a href="/vuepress/review/" class="sidebar-link">進步大會</a></li><li><a href="/vuepress/gitlab/" class="active sidebar-link">gitlab新專案步驟</a></li><li><a href="/vuepress/course/" class="sidebar-link">看起來沒什麼，但工程師做起來很麻煩的設計稿</a></li><li><a href="/vuepress/poem/" class="sidebar-link">寫詩</a></li><li><a href="/vuepress/5-20/" class="sidebar-link">5-20分享</a></li></ul> </div> <div class="page"> <div class="content"><p><div class="o-process"><div class="o-process__input"><label>輸入project名稱</label> <input type="text" value="project"></div> <ol><li><div>在 gitlab 上開 project</div> <ul><li>名稱：project</li></ul> <div>所有者選 blockstudio</div></li> <li><div>從 gitlab clone wp_template基礎樣板</div> <div class="o-code"><div>cd /Applications/MAMP/htdocs/display</div> <div>git clone --recursive git@gitlab.com:blockstudio/wp_template.git 2020project</div> <div>cd 2020project</div></div></li> <li><div>用fork或其他工具選擇develop分支，確保最新狀態</div></li> <li><div>執行remote.sh，提示輸入的時候輸入專案名稱project</div> <div class="o-code"><div>sh remote.sh</div></div> <div>這個指令一次完成下列動作：</div> <div>刪除原本的remote origin</div> <div>增加對應的remote origin</div></li> <li><div>Push 上 gitlab</div></li> <li><div>創建資料庫名稱：blockstu_2020project</div></li> <li>編碼選擇：utf8mb4_unicode_ci</li> <li><div>匯入SQL：非多國語言的blockstu_basic.sql或多國語言的blockstu_basic-lang.sql</div></li> <li><div>修改資料庫：選擇資料表wp_options修改siteurl與home欄位</div> <div>siteurl：http://localhost/display/2020project/main</div> <div>home：http://localhost/display/2020project</div> <div>前者是資料夾路徑</div> <div>後者是網站路徑，視情形亦可下者同上</div></li> <li><div>更改wp-config.php的資料庫名稱為blockstu_2020project</div></li> <li><div>更改 webpack.config.js 的 proxy為http://localhost/display/2020project</div></li> <li><div>使用以下網址進入wp-admin</div> <div>http://localhost/display/2020project/main/wp-admin</div></li> <li><div>登入後點擊設定-&gt;固定網址，點擊儲存變更按鈕即可使用正常的http://localhost/display/2020project/wp-admin網址登入後台</div></li></ol></div></p></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/vuepress/review/" class="prev">
+          進步大會
+        </a></span> <span class="next"><a href="/vuepress/course/">
+          看起來沒什麼，但工程師做起來很麻煩的設計稿
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/vuepress/assets/js/app.34ae0971.js" defer></script><script src="/vuepress/assets/js/7.f0695ac3.js" defer></script><script src="/vuepress/assets/js/2.d5730ec2.js" defer></script>
+  </body>
+</html>
